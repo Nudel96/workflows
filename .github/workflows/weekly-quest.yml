@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: Call Quest Endpoint
         run: |
-          curl -X POST https://development--questautomator--nudel2577.instant.host/postWeeklyQuest \
+          curl -X https://v-20250616--questautomator--nudel2577.instant.host/postWeeklyQuest \
                -H "Content-Type: application/json" \
                -H "Authorization: Bearer keychain_secret_Y5bWqnqiABFDsGYTEwV7DQuVWbTDsBUG1nH6DEkXx6WaSeuXrxoDXa1dQx3Tkx5Y"
