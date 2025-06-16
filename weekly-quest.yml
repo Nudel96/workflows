@@ -10,9 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Call Quest Endpoint
-        env:
-          API_KEY: ${{ secrets.INSTANTBOT_API_KEY }}
         run: |
           curl -X POST https://development--questautomator--nudel2577.instant.host/postWeeklyQuest \
                -H "Content-Type: application/json" \
-               -H "Authorization: $API_KEY"
+               -H "Authorization: Bearer keychain_secret_Y5bWqnqiABFDsGYTEwV7DQuVWbTDsBUG1nH6DEkXx6WaSeuXrxoDXa1dQx3Tkx5Y"
