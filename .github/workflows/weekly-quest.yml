@@ -2,8 +2,8 @@ name: Post Weekly Quest
 
 on:
   schedule:
-    - cron: '0 7 * * FRI'
-  workflow_dispatch:
+    - cron: '0 7 * * FRI'    # Freitags um 07:00 UTC (=09:00 MEZ)
+  workflow_dispatch:         # erlaubt manuellen Trigger
 
 jobs:
   post-quest:
@@ -11,6 +11,6 @@ jobs:
     steps:
       - name: Call Quest Endpoint
         run: |
-          curl -X https://v-20250616--questautomator--nudel2577.instant.host/postWeeklyQuest \
+          curl -X POST https://v-20250616--questautomator--nudel2577.instant.host/postWeeklyQuest \
                -H "Content-Type: application/json" \
-               -H "Authorization: Bearer keychain_secret_Y5bWqnqiABFDsGYTEwV7DQuVWbTDsBUG1nH6DEkXx6WaSeuXrxoDXa1dQx3Tkx5Y"
+               -H "Authorization: Bearer keychain_secret_iUn4Ru5VdpPvr3TgVwt6UnaiVmsAhyE2AEJeF6cj4q4zrPzCqU3WmLLu38zYUt8E"
