@@ -13,4 +13,4 @@ jobs:
         run: |
           curl -X POST https://development--questautomator--nudel2577.instant.host/postWeeklyQuest \
                -H "Content-Type: application/json" \
-               -H "Authorization: Bearer keychain_secret_W6FMPVUce9HFtwfNSaNc8m4R2jXwAEmbspieArBWiCWezs3Ui7FvMgLbrJDrCy5X"
+               -H "Authorization: Bearer ${{ secrets.INSTANTBOT_API_KEY }}"
