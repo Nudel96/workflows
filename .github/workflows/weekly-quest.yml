@@ -9,8 +9,8 @@ jobs:
   post-quest:
     runs-on: ubuntu-latest
     steps:
-      - name: Call Quest Endpoint (development)
+      - name: Call Quest Endpoint (v-20250618) # Namen des Schrittes angepasst
         run: |
-          curl -X POST https://development--questautomator--nudel2577.instant.host/postWeeklyQuest \
+          curl -X POST https://v-20250618--questautomator--nudel2577.instant.host/postWeeklyQuest \
                -H "Content-Type: application/json" \
                -H "Authorization: Bearer ${{ secrets.INSTANTBOT_API_KEY }}"
