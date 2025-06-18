@@ -9,7 +9,7 @@ jobs:
   post-quest:
     runs-on: ubuntu-latest
     steps:
-           - name: Call Quest Endpoint (development)
+      - name: Call Quest Endpoint (development)
         run: |
           curl -X POST https://development--questautomator--nudel2577.instant.host/postWeeklyQuest \
                -H "Content-Type: application/json" \
